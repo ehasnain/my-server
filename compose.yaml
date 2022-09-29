@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+    app:
+        container_name: app
+        image: app
+        build: .
+        restart: always
+    app-local:
+        container_name: app-run
+        image: app
+        build: .
+        restart: always
+        ports:
+            - "20965:20965"
