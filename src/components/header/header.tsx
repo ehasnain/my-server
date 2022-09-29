@@ -1,6 +1,6 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
 import { useLocation } from '@builder.io/qwik-city';
-import { QwikLogo } from '../icons/qwik';
+// import { QwikLogo } from '../icons/qwik';
 import styles from './header.css?inline';
 
 export default component$(() => {
@@ -11,14 +11,15 @@ export default component$(() => {
   return (
     <header>
       <a class="logo" href="/">
-        <QwikLogo />
+        {/* <QwikLogo /> */}
+        Home
       </a>
       <nav>
-        <a href="/docs" class={{ active: pathname.startsWith('/docs') }}>
-          Docs
+        <a href="/about-me" class={{ active: pathname.startsWith('/about-me') }}>
+          About Me
         </a>
-        <a href="/about-us" class={{ active: pathname.startsWith('/about-us') }}>
-          About Us
+        <a href="/projects" class={{ active: pathname.startsWith('/projects') }}>
+          Projects
         </a>
       </nav>
     </header>

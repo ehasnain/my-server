@@ -1,0 +1,22 @@
+.projects {
+    display: grid;
+    grid-template-columns: 210px auto 190px;
+    grid-template-areas: 'menu article on-this-page';
+    gap: 40px;
+}
+
+.projects h1 {
+    margin-top: 0;
+}
+
+.projects .menu {
+    grid-area: menu;
+}
+
+.projects article {
+    grid-area: article;
+}
+
+.projects .on-this-page {
+    grid-area: on-this-page;
+}

@@ -1,4 +1,4 @@
-import { useContent, useLocation } from '@builder.io/qwik-city';
+import { useContent } from '@builder.io/qwik-city';
 import { component$, useStyles$ } from '@builder.io/qwik';
 import styles from './on-this-page.css?inline';
 
@@ -8,8 +8,8 @@ export default component$(() => {
   const { headings } = useContent();
   const contentHeadings = headings?.filter((h) => h.level === 2 || h.level === 3) || [];
 
-  const { pathname } = useLocation();
-  const editUrl = `#update-your-edit-url-for-${pathname}`;
+  // const { pathname } = useLocation();
+  // const editUrl = `#update-your-edit-url-for-${pathname}`;
 
   return (
     <aside class="on-this-page">
@@ -37,23 +37,13 @@ export default component$(() => {
       <h6>More</h6>
       <ul>
         <li>
-          <a href={editUrl} target="_blank">
-            Edit this page
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/chat" target="_blank">
-            Join our community
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/BuilderIO/qwik" target="_blank">
+          <a href="https://github.com/ehasnain" target="_blank">
             Github
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/QwikDev" target="_blank">
-            @QwikDev
+          <a href="https://linkedin.com/in/ehteshamhasnain" target="_blank">
+            LinkedIn
           </a>
         </li>
       </ul>
