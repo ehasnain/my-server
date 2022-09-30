@@ -8,10 +8,10 @@ export default component$(() => {
     <footer>
       <ul>
         <li>
-          <a href="/about-me">About Me</a>
+          <a href="/about-me/">About Me</a>
         </li>
         <li>
-          <a href="/projects">Projects</a>
+          <a href="/projects/">Projects</a>
         </li>
       </ul>
     </footer>

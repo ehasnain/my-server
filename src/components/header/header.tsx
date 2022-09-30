@@ -15,10 +15,10 @@ export default component$(() => {
         Home
       </a>
       <nav>
-        <a href="/about-me" class={{ active: pathname.startsWith('/about-me') }}>
+        <a href="/about-me/" class={{ active: pathname.startsWith('/about-me/') }}>
           About Me
         </a>
-        <a href="/projects" class={{ active: pathname.startsWith('/projects') }}>
+        <a href="/projects/" class={{ active: pathname.startsWith('/projects/') }}>
           Projects
         </a>
       </nav>
