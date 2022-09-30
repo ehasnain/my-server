@@ -3,12 +3,12 @@ version: "3.9"
 services:
     app:
         container_name: app
-        image: app
+        image: ehtehasnain/my-server
         build: .
         restart: always
     app-local:
         container_name: app-run
-        image: app
+        image: ehtehasnain/my-server
         build: .
         restart: always
         ports:
