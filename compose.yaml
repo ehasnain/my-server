@@ -3,12 +3,12 @@ version: "3.9"
 services:
     app:
         container_name: app
-        image: ehtehasnain/my-server
+        image: ghcr.io/ehasnain/my-server
         build: .
         restart: always
     app-local:
         container_name: app-run
-        image: ehtehasnain/my-server
+        image: ghcr.io/ehasnain/my-server
         build: .
         restart: always
         ports:
