@@ -10,4 +10,4 @@ start:			## Start the app locally
 	@npm run start
 
 start-docker: ## Start the app in docker
-	@docker compose up app-local
+	@./scripts/run-local-docker.sh
